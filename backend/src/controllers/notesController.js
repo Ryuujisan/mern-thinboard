@@ -9,7 +9,7 @@ export async function getAllNotes(_, res) {
         console.log(`Error: ${err}`);
         res.status(500).json({message: "Internal Server Error"});
     }
-};
+}
 
 export async function getAllNoteById(req, res) {
     try{
@@ -42,7 +42,7 @@ export async function createNote(req, res) {
         console.log(`Error: ${err}`);
         res.status(500).json({message: "Internal Server Error"});
     }
-};
+}
 
 export async function updateNote(req, res) {
 
@@ -63,7 +63,7 @@ export async function updateNote(req, res) {
         res.status(500).json({message: "Internal Server Error"});
     }
 
-};
+}
 
 export async function deleteNote(req, res) {
     try {
@@ -74,4 +74,4 @@ export async function deleteNote(req, res) {
         console.log(`Error: ${err}`);
         res.status(500).json({message: "Internal Server Error"});
     }
-};
+}
